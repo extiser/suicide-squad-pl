@@ -1,0 +1,13 @@
+// Common styles of the project
+
+@import url('https://fonts.googleapis.com/css?family=Rubik:300,400&subset=cyrillic');
+
+html, body {
+    height: 100%;
+    font-family: 'Rubik', sans-serif;
+}
+
+.wrapper {
+  max-width: 1366px;
+  margin: auto;
+}

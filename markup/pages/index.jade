@@ -1,0 +1,38 @@
+doctype html
+html(class="no-js", lang="ru")
+
+  include ../components/head/head
+  include ../components/footer/footer
+
+  head
+    +head(head.defaults)
+  body
+    .mainpage
+      .mainpage__title Отряд самоубийц
+      .mainpage__column.mainpage__column--left
+        .mainpage__description
+          p Правительство решает дать команде суперзлодеев шанс на искупление. Подвох в том, что их отправляют на миссию, где они, вероятнее всего, погибнут...
+        .mainpage-movie-info
+          .mainpage-movie-info__row
+            .mainpage-movie-info__title Страна: 
+            .mainpage-movie-info__description США 
+          .mainpage-movie-info__row
+            .mainpage-movie-info__title Производство:
+            .mainpage-movie-info__description Warner Bros. Pictures, DC Entertainment, DC Comics, Dune Entertainment, Atlas Entertainment
+          .mainpage-movie-info__row
+            .mainpage-movie-info__title Год выпуска:
+            .mainpage-movie-info__description 2016
+          .mainpage-movie-info__row
+            .mainpage-movie-info__title Жанр:
+            .mainpage-movie-info__description фантастика, фэнтези, боевик, триллер, криминал
+          .mainpage-movie-info__row
+            .mainpage-movie-info__title Продолжительность:
+            .mainpage-movie-info__description 02:02:23
+
+        a(href="#" title="").movie-btn Скачать
+
+      .mainpage__column.mainpage__column--right
+        | <iframe width="560" height="315" src="https://www.youtube.com/embed/7xLCggrIRHY" frameborder="0" allowfullscreen></iframe>
+
+  //- Main scripts. You can replace it, but I recommend you to leave it here
+  script(src='%=static=%js/main%=hash=%%=min=%.js')
